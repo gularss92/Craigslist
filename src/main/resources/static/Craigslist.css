@@ -25,3 +25,7 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration: underline;
 }
+
+.form-control {
+    max-width: 300px;
+}

@@ -16,8 +16,8 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkCommunity" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Community
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkCommunity" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 15px;">
+              Community <img src="community.png" alt="Group of three" style="height: 1em; width: auto">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkCommunity" style="column-count: 2">
               <a class="dropdown-item" href="#">Activities</a>
@@ -42,7 +42,7 @@
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
+              Services <img src="services.png" alt="Hand with employee" style="height: 1em; width: auto">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkServices" style="column-count: 2">
               <a class="dropdown-item" href="#">Automotive</a>
@@ -72,7 +72,7 @@
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkDiscussionForums" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Discussion Forums
+              Discussion Forums <img src="discuss.png" alt="Discussion" style="height: 1em; width: auto">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkDiscussionForums" style="width: 500px; column-count: 3">
               <a class="dropdown-item" href="#">Apple</a>
@@ -132,7 +132,7 @@
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkHousing" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Housing
+              Housing <img src="house.png" alt="House" style="height: 1em; width: auto">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkHousing">
               <a class="dropdown-item" href="#">Apts / Housing</a>
@@ -151,7 +151,7 @@
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkForSale" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              For Sale
+              For Sale <img src="shoptag.png" alt="Shopping tag" style="height: 1em; width: auto">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkForSale" style="width: 500px; column-count: 3">
               <a class="dropdown-item" href="#">Antiques</a>
@@ -205,7 +205,7 @@
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkJobs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Jobs
+              Jobs <img src="job.png" alt="Suitcase" style="height: 1em; width: auto">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkJobs" style="width: 500px; column-count: 2">
               <a class="dropdown-item" href="#">Accounting+Finance</a>
@@ -245,7 +245,7 @@
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkGigs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Gigs
+              Gigs <img src="gigs.png" alt="Transaction" style="height: 1em; width: auto">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkGigs">
               <a class="dropdown-item" href="#">Computer</a>
@@ -261,10 +261,10 @@
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkLanguage" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Language
+              Language <img src="american%20flag.png" alt="American" style="height: 1em; width: auto">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLanguage">
-              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">American</a>
               <a class="dropdown-item" href="#">Norwegian</a>
             </div>
           </li>
@@ -288,6 +288,55 @@
           <div class="input-group-append">
             <button class="btn btn-outline-secondary rounded-right" type="submit"><img src="magnifier.png" alt="Search Icon" style="height: 1em; width: auto"></button>
           </div>
+        </div>
+      </form>
+    </div>
+    <div class="col">
+      <div class="location button">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#locationModal">
+          Your location
+        </button>
+        <div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="locationModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="locationModalLabel">Craigslist wants to know your location to help you find your closest area</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Would you like Craigslist to access your location?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No, I want to do it myself</button>
+                <button type="button" class="btn btn-primary">Yes, please</button>
+              </div>
+              <div class="areas">
+                <a>Test</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password" id="password" name="password" required>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="remember-me" name="remember-me">
+          <label class="form-check-label" for="remember-me">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Log in</button>
+        <div class="mt-2">
+          <a href="#">Create user</a>
+          <span class="text-muted mx-2">|</span>
+          <a href="#">Forgotten your password?</a>
         </div>
       </form>
     </div>
